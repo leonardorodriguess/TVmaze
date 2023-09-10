@@ -15,4 +15,12 @@ describe('StarRating', () => {
       expect(getByTestId('starIcon')).toBeTruthy();
     });
   });
+
+  describe('rating was NOT passing', () => {
+    it('return nothing', () => {
+      const {UNSAFE_root} = render(<StarRating /* rating={{average: 7}} */ />);
+
+      expect(UNSAFE_root.children.length).toEqual(0);
+    });
+  });
 });
