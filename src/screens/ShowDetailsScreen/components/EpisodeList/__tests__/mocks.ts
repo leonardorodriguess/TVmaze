@@ -1,8 +1,8 @@
-import {DaysOfWeek} from '../../../models/CommonModels';
-import {Episode} from '../../../models/EpisodeModel';
-import {Show} from '../../../models/ShowModel';
+import {DaysOfWeek} from '../../../../../models/CommonModels';
+import {Episode} from '../../../../../models/EpisodeModel';
+import {Show} from '../../../../../models/ShowModel';
 
-export const show: Show = {
+const show: Show = {
   id: 250,
   url: 'https://www.tvmaze.com/shows/250/kirby-buckets',
   name: 'Kirby Buckets',
@@ -33,7 +33,7 @@ export const show: Show = {
     "<p>The single-camera series that mixes live-action and animation stars Jacob Bertrand as the title character. <b>Kirby Buckets</b> introduces viewers to the vivid imagination of charismatic 13-year-old Kirby Buckets, who dreams of becoming a famous animator like his idol, Mac MacCallister. With his two best friends, Fish and Eli, by his side, Kirby navigates his eccentric town of Forest Hills where the trio usually find themselves trying to get out of a predicament before Kirby's sister, Dawn, and her best friend, Belinda, catch them. Along the way, Kirby is joined by his animated characters, each with their own vibrant personality that only he and viewers can see.</p>",
 };
 
-export const episode1: Episode = {
+const episode1: Episode = {
   id: 20849,
   url: 'https://www.tvmaze.com/episodes/20849/kirby-buckets-1x01-cars-buses-and-lawnmowers',
   name: 'Cars, Buses and Lawnmowers',
@@ -62,7 +62,7 @@ export const episode1: Episode = {
   },
 };
 
-export const episode2: Episode = {
+const episode2: Episode = {
   id: 20850,
   url: 'https://www.tvmaze.com/episodes/20850/kirby-buckets-1x02-flice-of-the-living-dead',
   name: 'Flice of the Living Dead',
@@ -91,7 +91,7 @@ export const episode2: Episode = {
   },
 };
 
-export const episode22: Episode = {
+const episode22: Episode = {
   id: 321626,
   url: 'https://www.tvmaze.com/episodes/321626/kirby-buckets-2x02-the-gil-in-my-life',
   name: 'The Gil in My Life',
@@ -120,7 +120,7 @@ export const episode22: Episode = {
   },
 };
 
-export const episode23: Episode = {
+const episode23: Episode = {
   id: 321627,
   url: 'https://www.tvmaze.com/episodes/321627/kirby-buckets-2x03-the-school-spirit',
   name: 'The School Spirit',
@@ -149,13 +149,10 @@ export const episode23: Episode = {
   },
 };
 
-export const episodeList = [episode1, episode2, episode22, episode23];
-
-export const showMocks = {
+export const mocks = {
   show,
   episode1,
   episode2,
   episode22,
   episode23,
-  episodeList,
 };

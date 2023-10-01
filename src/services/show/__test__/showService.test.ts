@@ -8,7 +8,7 @@ describe('showService', () => {
       jest.spyOn(api, 'get').mockResolvedValue({data: showMocks.episodeList});
     });
     test('when API return episode list return a list of episodes grouped by season', async () => {
-      const groupedEpisodes = await showService.getEpisodes('250');
+      const groupedEpisodes = await showService.getEpisodes(250);
 
       expect(groupedEpisodes.seasonNames.includes('1')).toBeTruthy();
       expect(groupedEpisodes.seasonNames.includes('2')).toBeTruthy();
@@ -19,7 +19,7 @@ describe('showService', () => {
     });
 
     test('when API return episode list return the episodes grouped by season', async () => {
-      const groupedEpisodes = await showService.getEpisodes('250');
+      const groupedEpisodes = await showService.getEpisodes(250);
 
       const temp1 = groupedEpisodes.seasons[1];
       const temp2 = groupedEpisodes.seasons[2];
